@@ -14,7 +14,7 @@ class Main:
         print("**** Calling init ****")
         print(f"**** Loading model = {model_name} ****")
         # load the model from disk
-        # self.model = torch.load( "data/" + model_name )
+        self.model = torch.load( "data/" + model_name )
 
     def predict(self, X, features_names):
         df = pd.DataFrame(data=X, columns=features_names)
